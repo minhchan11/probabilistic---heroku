@@ -1,0 +1,17 @@
+#d3 {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.jumbotron {
+  text-align: center;
+  color: white !important;
+  background: linear-gradient(rgba(181, 173, 173, 0.55), rgba(181, 173, 173, 0.55)), url(http://i.telegraph.co.uk/multimedia/archive/02419/roads_2419537b.jpg);
+  background-size: cover;
+  font-size: 6em; }
+
+.chart {
+  background-color: lightGray; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3R5bGVzLmNzcyIsInNvdXJjZXMiOlsic3R5bGVzLnNjc3MiXSwic291cmNlc0NvbnRlbnQiOlsiI2Qze1xuICAgbWFyZ2luLXRvcDogMjBweDtcbiAgIGRpc3BsYXk6IGZsZXg7XG4gICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbi5qdW1ib3Ryb257XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcblxuICBjb2xvcjogd2hpdGUgIWltcG9ydGFudDtcbiAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KHJnYmEoMTgxLCAxNzMsIDE3MywgMC41NSksIHJnYmEoMTgxLCAxNzMsIDE3MywgMC41NSkpLFxuICAgICAgICAgICAgICAgIHVybChodHRwOi8vaS50ZWxlZ3JhcGguY28udWsvbXVsdGltZWRpYS9hcmNoaXZlLzAyNDE5L3JvYWRzXzI0MTk1MzdiLmpwZyk7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG5cbiAgZm9udC1zaXplOiA2ZW07XG59XG5cbi5jaGFydCB7XG4gIGJhY2tncm91bmQtY29sb3I6IGxpZ2h0R3JheTtcbn1cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxBQUFBLEdBQUcsQ0FBQTtFQUNBLFVBQVUsRUFBRSxJQUFJO0VBQ2hCLE9BQU8sRUFBRSxJQUFJO0VBQ2IsV0FBVyxFQUFFLE1BQU07RUFDbkIsZUFBZSxFQUFFLE1BQU0sR0FDekI7O0FBRUQsQUFBQSxVQUFVLENBQUE7RUFDUixVQUFVLEVBQUUsTUFBTTtFQUVsQixLQUFLLEVBQUUsZ0JBQWdCO0VBQ3ZCLFVBQVUsRUFBRSxxRUFBcUUsRUFDbkUseUVBQXlFO0VBQ3ZGLGVBQWUsRUFBRSxLQUFLO0VBRXRCLFNBQVMsRUFBRSxHQUFHLEdBQ2Y7O0FBRUQsQUFBQSxNQUFNLENBQUM7RUFDTCxnQkFBZ0IsRUFBRSxTQUFTLEdBQzVCIn0= */
