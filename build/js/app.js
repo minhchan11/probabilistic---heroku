@@ -4711,7 +4711,7 @@ var jStat = require('jStat');
 
 function normalDataSet(mean, std) {
   var data = [];
-  for (var i = mean - 4*std; i <= mean + 4*std; i += 0.025) {
+  for (var i = mean - 4*std; i <= mean + 4*std; i += 0.08*std) {
     el = {
       "x": i,
       "y": jStat.normal.pdf(i, mean, std)
@@ -4724,7 +4724,7 @@ function normalDataSet(mean, std) {
 
 function deterministicDataSet(mean) {
   var data = [];
-  for (var i = 0; i <= 20; i += 0.1) {
+  for (var i = 0; i <= 400; i ++) {
     el = {
       "x": i,
       "y": mean*i
@@ -4749,7 +4749,7 @@ function uniformDataSet(min, max) {
 
 function logNormalDataSet(mean, std) {
   var data = [];
-  for (var i = 0; i <= 5; i += 0.025) {
+  for (var i = 0; i <= mean*20; i += (0.05*mean)) {
     el = {
       "x": i,
       "y": jStat.lognormal.pdf(i, mean, std)
@@ -4793,7 +4793,7 @@ function truncatedLogNormalDataSet(mean, std, min, max) {
     }
     data.push(el);
   }
-  data.push({"x":max, "y":0}, {"x":5, "y":0});
+  data.push({"x":max, "y":0}, {"x":max+5, "y":0});
   console.log(data);
   return data;
 }
@@ -4910,8 +4910,6 @@ function cleanGraph(){
 function restartForm(){
   $("#probablistic_modal").modal("hide");
   $('input').val("");
-
-
 }
 
 $(document).ready(function () {
@@ -4933,11 +4931,11 @@ $(document).ready(function () {
     $("#visualize").submit(function(event){
       event.preventDefault();
       var option = $('#probalistic_model_input').val();
-      var mean = parseInt($('#probalistic_input_mean').val());
-      var std = parseInt($('#probalistic_input_std').val());
-      var min = parseInt($('#probalistic_input_minimum').val());
-      var max = parseInt($('#probalistic_input_maximum').val());
-      var likely = parseInt($('#probalistic_input_likely').val());
+      var mean = parseFloat($('#probalistic_input_mean').val());
+      var std = parseFloat($('#probalistic_input_std').val());
+      var min = parseFloat($('#probalistic_input_minimum').val());
+      var max = parseFloat($('#probalistic_input_maximum').val());
+      var likely = parseFloat($('#probalistic_input_likely').val());
 
       switch (option) {
         case 'Deterministic':
